@@ -1,3 +1,7 @@
+# ╭───────────────────────────────────────────────────────────╮
+# │ Optimized config by VAATIGAMES - support @ vaatigames.ovh │
+# ╰───────────────────────────────────────────────────────────╯
+
 settings:
   allow-end: true
   warn-on-overload: true
