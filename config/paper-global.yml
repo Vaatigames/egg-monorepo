@@ -65,7 +65,7 @@ misc:
   compression-level: default
   fix-entity-position-desync: true
   load-permissions-yml-before-plugins: true
-  max-joins-per-tick: 5
+  max-joins-per-tick: 3
   region-file-cache-size: 256
   strict-advancement-dimension-check: false
   use-alternative-luck-formula: false

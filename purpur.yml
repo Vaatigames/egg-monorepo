@@ -144,7 +144,7 @@ settings:
     suppress-library-loader: false
   network:
     upnp-port-forwarding: false
-    max-joins-per-second: false
+    max-joins-per-second: true
     kick-for-out-of-order-chat: true
   username-valid-characters: ^[a-zA-Z0-9_.]*$
   blast-resistance-overrides: {}
