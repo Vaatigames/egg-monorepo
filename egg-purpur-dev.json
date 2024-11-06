@@ -1,23 +1,25 @@
 {
     "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
     "meta": {
-        "version": "PTDL_v1",
-        "update_url": null
+        "version": "PTDL_v2",
+        "update_url": "https://raw.githubusercontent.com/Vaatigames/egg-monorepo/egg-purpur-dev.json"
     },
-    "name": "Optimized Purpur (for developers)",
+    "exported_at": "2024-11-06T14:33:18+01:00",
+    "name": "Purpur Dev",
     "author": "client@vaatigames.ovh",
-    "description": "Optimized settings for the PurpurMC Software, with additionals features deleted for custom minecraft servers/minigames instances. #DEMOCRAFT",
+    "description": "Optimized settings for the PurpurMC Software, with developer default settings. #DEMOCRAFT",
     "features": [
-        "eula"
+        "eula",
+        "java_version",
+        "pid_limit"
     ],
-    "images": [
-        "ghcr.io\/pterodactyl\/yolks:java_8",
-        "ghcr.io\/pterodactyl\/yolks:java_11",
-        "ghcr.io\/pterodactyl\/yolks:java_16",
-        "ghcr.io\/pterodactyl\/yolks:java_17",
-        "ghcr.io\/pterodactyl\/yolks:java_18",
-        "ghcr.io\/pterodactyl\/yolks:java_21"
-    ],
+    "docker_images": {
+        "Java 21": "ghcr.io\/pterodactyl\/yolks:java_21",
+        "Java 17": "ghcr.io\/pterodactyl\/yolks:java_17",
+        "Java 16": "ghcr.io\/pterodactyl\/yolks:java_16",
+        "Java 11": "ghcr.io\/pterodactyl\/yolks:java_11",
+        "Java 8": "ghcr.io\/pterodactyl\/yolks:java_8"
+    },
     "file_denylist": [],
     "startup": "java -Xms256M -Xmx$(({{SERVER_MEMORY}} - ({{SERVER_MEMORY}}\/10)))M -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https:\/\/mcflags.emc.gs -Daikars.new.flags=true --add-modules=jdk.incubator.vector -jar {{SERVER_JARFILE}}",
     "config": {
@@ -41,7 +43,8 @@
             "default_value": "1.21.1",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "nullable|string|max:20"
+            "rules": "nullable|string|max:20",
+            "field_type": "text"
         },
         {
             "name": "Server Jar File",
@@ -50,7 +53,8 @@
             "default_value": "server.jar",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "required|string|max:20"
+            "rules": "required|string|max:20",
+            "field_type": "text"
         },
         {
             "name": "Download Path",
@@ -59,7 +63,8 @@
             "default_value": "",
             "user_viewable": false,
             "user_editable": false,
-            "rules": "nullable|string"
+            "rules": "nullable|string",
+            "field_type": "text"
         },
         {
             "name": "Build Number",
@@ -68,7 +73,8 @@
             "default_value": "latest",
             "user_viewable": true,
             "user_editable": false,
-            "rules": "required|string|max:20"
+            "rules": "required|string|max:20",
+            "field_type": "text"
         },
         {
             "name": "Smart startup",
@@ -77,7 +83,8 @@
             "default_value": "true",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "required|string|max:20"
+            "rules": "required|string|max:20",
+            "field_type": "text"
         }
     ]
 }
