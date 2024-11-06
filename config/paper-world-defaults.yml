@@ -1,11 +1,20 @@
+# This is the world defaults configuration file for Paper.
+# As you can see, there's a lot to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# 
+# If you need help with the configuration or have any questions related to Paper,
+# join us in our Discord or check the docs page.
+# 
+# Configuration options here apply to all worlds, unless you specify overrides inside
+# the world-specific config file inside each world folder.
+# 
+# Docs: https://docs.papermc.io/
+# Discord: https://discord.gg/papermc
+# Website: https://papermc.io/
+
 # ╭───────────────────────────────────────────────────────────╮
 # │ Optimized config by VAATIGAMES - support @ vaatigames.ovh │
 # ╰───────────────────────────────────────────────────────────╯
-# 
-# Paper Docs: https://docs.papermc.io/
-# Paper Discord: https://discord.gg/papermc
-# Paper Website: https://papermc.io/
-
 
 _version: 31
 anticheat:
@@ -150,35 +159,35 @@ entities:
     alt-item-despawn-rate:
       enabled: true
       items:
-        cobblestone: 300
-        netherrack: 300
-        sand: 300
-        red_sand: 300
-        gravel: 300
-        dirt: 300
-        short_grass: 300
-        pumpkin: 300
-        melon_slice: 300
-        kelp: 300
+        acacia_leaves: 300
+        andesite: 300
         bamboo: 300
+        birch_leaves: 300
+        cactus: 300
+        cherry_leaves: 300
+        cobblestone: 300
+        dark_oak_leaves: 300
+        diorite: 300
+        dirt: 300
+        granite: 300
+        gravel: 300
+        jungle_leaves: 300
+        kelp: 300
+        mangrove_leaves: 300
+        melon_slice: 300
+        netherrack: 300
+        oak_leaves: 300
+        pumpkin: 300
+        red_sand: 300
+        sand: 300
+        scaffolding: 600
+        short_grass: 300
+        spruce_leaves: 300
         sugar_cane: 300
         twisting_vines: 300
         weeping_vines: 300
-        oak_leaves: 300
-        spruce_leaves: 300
-        birch_leaves: 300
-        jungle_leaves: 300
-        acacia_leaves: 300
-        dark_oak_leaves: 300
-        mangrove_leaves: 300
-        cherry_leaves: 300
-        cactus: 300
-        diorite: 300
-        granite: 300
-        andesite: 300
-        scaffolding: 600
     count-all-mobs-for-spawning: false
-    creative-arrow-despawn-rate: 20
+    creative-arrow-despawn-rate: '20'
     despawn-range-shape: ELLIPSOID
     despawn-ranges:
       ambient:
@@ -218,7 +227,7 @@ entities:
     - SleepingZ
     iron-golems-can-spawn-in-air: false
     monster-spawn-max-light-level: default
-    non-player-arrow-despawn-rate: 20
+    non-player-arrow-despawn-rate: '20'
     per-player-mob-spawns: true
     scan-for-legacy-ender-dragon: true
     skeleton-horse-thunder-spawn-chance: default
@@ -284,7 +293,7 @@ environment:
   treasure-maps:
     enabled: true
     find-already-discovered:
-      loot-tables: true
+      loot-tables: 'true'
       villager-trade: true
   void-damage-amount: 4.0
   void-damage-min-build-height-offset: -64.0
@@ -343,19 +352,19 @@ spawn:
 tick-rates:
   behavior:
     villager:
-      validatenearbypoi: 60
       acquirepoi: 120
+      validatenearbypoi: 60
   container-update: 1
   dry-farmland: 1
   grass-spread: 4
   mob-spawner: 2
   sensor:
     villager:
-      secondarypoisensor: 80
       nearestbedsensor: 80
-      villagerbabiessensor: 40
-      playersensor: 40
       nearestlivingentitysensor: 40
+      playersensor: 40
+      secondarypoisensor: 80
+      villagerbabiessensor: 40
   wet-farmland: 1
 unsupported-settings:
   disable-world-ticking-when-empty: false

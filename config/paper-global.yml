@@ -1,10 +1,20 @@
+# This is the global configuration file for Paper.
+# As you can see, there's a lot to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# 
+# If you need help with the configuration or have any questions related to Paper,
+# join us in our Discord or check the docs page.
+# 
+# The world configuration options have been moved inside
+# their respective world folder. The files are named paper-world.yml
+# 
+# Docs: https://docs.papermc.io/
+# Discord: https://discord.gg/papermc
+# Website: https://papermc.io/
+
 # ╭───────────────────────────────────────────────────────────╮
 # │ Optimized config by VAATIGAMES - support @ vaatigames.ovh │
 # ╰───────────────────────────────────────────────────────────╯
-# 
-# Paper Docs: https://docs.papermc.io/
-# Paper Discord: https://discord.gg/papermc
-# Paper Website: https://papermc.io/
 
 _version: 29
 block-updates:
@@ -75,17 +85,16 @@ packet-limiter:
     action: KICK
     interval: 7.0
     max-packet-rate: 500.0
+  kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
     ServerboundCommandSuggestionPacket:
       action: DROP
       interval: 1.0
       max-packet-rate: 15.0
-  
     ServerboundPlaceRecipePacket:
       action: DROP
       interval: 4.0
       max-packet-rate: 5.0
-
     kick-message: <red><lang:disconnect.exceeded_packet_rate>
 player-auto-save:
   max-per-tick: -1
