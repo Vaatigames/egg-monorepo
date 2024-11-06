@@ -1,2 +1,1 @@
-# egg-monorepo
-🥚 Vaatigame's pterodactyl eggs monorepo
+# 🥚 Vaatigame's Pterodactyl Eggs Monorepo
