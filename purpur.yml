@@ -31,7 +31,7 @@ settings:
       stonecutter: <player> has sawed themself in half
   register-minecraft-debug-commands: false
   server-mod-name: Purpur
-  use-alternate-keepalive: false
+  use-alternate-keepalive: true
   disable-give-dropping: false
   bee-count-payload: false
   tps-catchup: true
@@ -1560,7 +1560,7 @@ world-settings:
           only-babies: true
           chance: 0.05
           try-existing-chickens: true
-        aggressive-towards-villager-when-lagging: true
+        aggressive-towards-villager-when-lagging: false
         bypass-mob-griefing: false
         takes-damage-from-water: false
         always-drop-exp: false
