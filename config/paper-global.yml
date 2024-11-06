@@ -37,9 +37,9 @@ console:
   has-all-permissions: false
 item-validation:
   book:
-    author: 8192
-    page: 16384
-    title: 8192
+    author: 1024
+    page: 1024
+    title: 1024
   book-size:
     page-max: 2560
     total-multiplier: 0.98
