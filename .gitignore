@@ -1,0 +1,13 @@
+server.jar
+cache
+versions
+plugins
+world*
+libraries
+logs
+
+
+eula.txt
+*.json
+help.yml
+permissions.yml
