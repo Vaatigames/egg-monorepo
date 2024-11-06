@@ -75,6 +75,11 @@ packet-limiter:
     action: KICK
     interval: 7.0
     max-packet-rate: 500.0
+  overrides:
+    ServerboundCommandSuggestionPacket:
+      action: DROP
+      interval: 1.0
+      max-packet-rate: 15.0
   kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
     ServerboundPlaceRecipePacket:
