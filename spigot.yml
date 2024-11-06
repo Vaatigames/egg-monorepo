@@ -10,11 +10,6 @@
 # Discord: https://www.spigotmc.org/go/discord
 # Forums: http://www.spigotmc.org/
 
-# ╭───────────────────────────────────────────────────────────╮
-# │ Optimized config by VAATIGAMES - support @ vaatigames.ovh │
-# ╰───────────────────────────────────────────────────────────╯
-
-
 messages:
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.

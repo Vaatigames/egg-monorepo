@@ -12,10 +12,6 @@
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-# ╭───────────────────────────────────────────────────────────╮
-# │ Optimized config by VAATIGAMES - support @ vaatigames.ovh │
-# ╰───────────────────────────────────────────────────────────╯
-
 _version: 29
 block-updates:
   disable-chorus-plant-updates: false
@@ -95,7 +91,6 @@ packet-limiter:
       action: DROP
       interval: 4.0
       max-packet-rate: 5.0
-    kick-message: <red><lang:disconnect.exceeded_packet_rate>
 player-auto-save:
   max-per-tick: -1
   rate: -1

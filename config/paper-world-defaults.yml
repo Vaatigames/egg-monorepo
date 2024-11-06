@@ -12,10 +12,6 @@
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-# ╭───────────────────────────────────────────────────────────╮
-# │ Optimized config by VAATIGAMES - support @ vaatigames.ovh │
-# ╰───────────────────────────────────────────────────────────╯
-
 _version: 31
 anticheat:
   anti-xray:

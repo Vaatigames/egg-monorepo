@@ -8,10 +8,6 @@
 # Website: https://purpurmc.org 
 # Docs: https://purpurmc.org/docs 
 
-# ╭───────────────────────────────────────────────────────────╮
-# │ Optimized config by VAATIGAMES - support @ vaatigames.ovh │
-# ╰───────────────────────────────────────────────────────────╯
-
 verbose: false
 settings:
   messages:
